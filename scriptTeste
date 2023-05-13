@@ -1,0 +1,8 @@
+import interpretation
+
+if interpretation:
+    document = Document()
+    document.add_paragraph(f"Interpretação da Petição: {interpretation}")
+    document.save("relatorio.docx")
+else:
+    print("Não foi possível obter uma interpretação da petição.")

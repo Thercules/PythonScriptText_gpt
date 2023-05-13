@@ -1,14 +1,14 @@
-#CÓDIGO COM TRÊS PROMPT E UNINDO OS DOIS
 import openai
+import docx
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 model_engine = "text-davinci-002"
-max_tokens = 4000
+max_tokens = 4050
 
 prompt1 = "Escreva um título de artigo sobre segunda guerra mundial e uma sinopse desse artigo"
-prompt2 = "Escreva uma introdução de artigo sobre segunda guerra e uma boa citação ilustre a respeito desse tema"
-prompt3 = "escreva dois parágrafos sobre a história do segunda guerra"
+prompt2 = "Escreva uma introdução extensa com 4000 caracteres para um artigo sobre segunda guerra mundial"
+prompt3 = "Escreva um título para um tópico de desenvolvimento e contextualize de forma extensa com até 4000 caracteres sobre a história da segunda guerra"
 
 response1 = openai.Completion.create(
    engine=model_engine,
@@ -44,4 +44,14 @@ response3 = openai.Completion.create(
 )
 
 output_text = response1.choices[0].text.strip() + response2.choices[0].text.strip() + response3.choices[0].text.strip()
-print("Output:", output_text)
+
+# cria um objeto Document
+doc = docx.Document()
+
+# adiciona o conteúdo ao documento
+doc.add_paragraph(output_text)
+
+# salva o documento
+doc.save('output4.docx')
+
+

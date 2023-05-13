@@ -1,7 +1,7 @@
 #GERAÇÃO DE TEXTO COM CHAT GPT COM UM 
 import openai
 
-openai.api_key = ""
+openai.api_key = "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"
 
 model_engine = "gpt-3.5-turbo"
 max_tokens = 4050
