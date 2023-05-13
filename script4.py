@@ -1,7 +1,7 @@
 #CÓDIGO COM TRÊS PROMPT E UNINDO OS DOIS
 import openai
 
-openai.api_key = "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"
+openai.api_key = "CODIGO API AQUI"
 
 model_engine = "text-davinci-002"
 max_tokens = 4000

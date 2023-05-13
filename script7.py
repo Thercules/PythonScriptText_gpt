@@ -5,7 +5,7 @@ import openai
 import PyPDF4
 import io
 
-openai.api_key = "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"
+openai.api_key = "CODIGO API AQUI"
 model_engine = "text-davinci-002"
 
 # obtém o diretório atual do script

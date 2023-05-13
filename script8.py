@@ -19,7 +19,7 @@ questions = [
 ]
 
 # Configuração da API da OpenAI
-openai.api_key = "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"
+openai.api_key = "CODIGO API AQUI"
 
 # Função para extrair o texto do PDF
 def extract_text_from_pdf(pdf_path):

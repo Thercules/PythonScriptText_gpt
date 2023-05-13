@@ -2,7 +2,7 @@
 import openai
 
 # Autenticação
-openai.api_key = "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"
+openai.api_key = "CODIGO API AQUI"
 
 # Definindo o modelo a ser usado
 model_engine = "text-davinci-002"
